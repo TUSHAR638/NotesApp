@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/noteTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Note Title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginVertical="20sp"/>
+
+    <EditText
+        android:id="@+id/noteContentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:hint="Write your note here"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/UndoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Undo"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/RedoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Redo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/SaveNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Note"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+
+</LinearLayout>

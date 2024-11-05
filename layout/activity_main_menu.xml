@@ -1,0 +1,114 @@
+
+
+<androidx.cardview.widget.CardView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="350dp"
+android:layout_height="500dp"
+app:cardCornerRadius="100dp"
+app:cardElevation="8dp"
+android:layout_gravity="center"
+android:layout_margin="16dp"
+android:padding="16dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ContactUs"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"
+        android:gravity="center" />
+
+    <!-- Instagram Icon and Text -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/instagram" />
+
+        <TextView
+            android:id="@+id/instagramTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Instagram"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            android:paddingStart="30sp"
+            android:textSize="20sp"
+            tools:ignore="RtlSymmetry"/>
+
+    </LinearLayout>
+
+    <!-- Twitter Icon and Text -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="-17sp">
+
+        <ImageView
+            android:layout_width="60sp"
+            android:layout_height="50dp"
+            android:paddingLeft="-11dp"
+            android:src="@drawable/twitter" />
+
+        <TextView
+            android:id="@+id/twitterTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Twitter"
+            android:layout_marginStart="8dp"
+            android:paddingStart="30sp"
+            android:textSize="20sp"
+            tools:ignore="RtlSymmetry"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="-17sp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:paddingLeft="-11sp"
+            android:src="@drawable/github_mark" />
+
+        <TextView
+            android:id="@+id/GitHub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GitHub"
+            android:layout_marginStart="8dp"
+            android:paddingStart="30sp"
+            android:textSize="20sp"
+            tools:ignore="RtlSymmetry"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>
+</androidx.cardview.widget.CardView>
+
+
+

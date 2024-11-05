@@ -1,0 +1,62 @@
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="500dp"
+    app:cardCornerRadius="100dp"
+    app:cardElevation="8dp"
+    android:layout_gravity="center"
+    android:layout_margin="16dp"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="40dp"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/NewNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NewNote"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/OldNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/OldNotes"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ContactUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ContactUs"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="22sp"
+            android:layout_marginLeft="2sp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
